@@ -3,11 +3,10 @@
     --color-blue-2-rgb: 0, 122, 255;
     --color-grey-rgb: 118, 118, 121;
     --focus-ring: 0px 0px 0px 4px rgba(var(--color-blue-2-rgb), 0.6);
-  }
+}
 
 body {
     margin: 0;
-    
     padding: 0;
     background-color: rgba(var(--color-blue-1-rgb), 1);
     color: rgb(240,240,240);
@@ -29,7 +28,6 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 12px;
-    
     margin-top: 15px;
 }
 
@@ -50,7 +48,6 @@ header {
 .container {
     width: 91%;
     max-width: 680px;
-    
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -64,15 +61,13 @@ h1 {
 
 a {
     text-decoration: none;
-    
     color: rgb(118, 118, 121);
 }
 
 .tile {
     width: 100%;
-        box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
     background-color: rgb(255, 255, 255, 1);
-    
     margin: 7px;
     border-radius: 16px;
     display: flex;
@@ -86,7 +81,6 @@ a {
 
 .tile-share-button {
     margin: 8px;
-    
     width: 40px;
     height: 40px;
     border-radius: 300px;
@@ -98,13 +92,11 @@ a {
     margin-top: 10px;
 }
 
-
 .image-container {
     height: 96px;
     width: 96px;
     border-radius: 48px;
     overflow: hidden;
-    
 }
 
 .image-container img {
@@ -114,11 +106,59 @@ a {
 .icon {
     margin: 4px 8px;
     width: 44px;
-    
     height: 44px;
 }
 
 footer a {
     color: rgb(240,240,240);
     text-decoration: none;
+}
+
+@media (max-width: 550px) {
+    body {
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .share-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .tile {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .tile-share-button {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .image-container {
+        height: 80px;
+        width: 80px;
+    }
+
+    .icon {
+        margin: 2px 4px;
+        width: 30px;
+        height: 30px;
+    }
 }
