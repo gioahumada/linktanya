@@ -117,3 +117,8 @@ a {
     
     height: 44px;
 }
+
+footer a {
+    color: rgb(240,240,240);
+    text-decoration: none;
+}
