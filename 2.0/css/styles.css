@@ -1,0 +1,187 @@
+:root {
+    --primario: rgb(175, 82, 222);
+    --blanco: #fff;
+    --oscuro: #000;
+    --gris: #a9a9a9;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; /* 1.6 * 10px = 16px */
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(196,148,233,1) 100%);
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem 1rem 2rem;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+h1 a img {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border-radius: 50%; /* Hace la imagen completamente redonda */
+    margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+h1 a {
+    display: flex; /* Aplica flexbox al enlace para centrar el contenido */
+    flex-direction: column; /* Organiza los elementos del enlace en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-decoration: none;
+    color: var(--oscuro);
+    font-size: 2.4rem;
+    margin-bottom: 0rem;
+}
+
+.descripcion {
+    font-size: 1.6rem;
+    color: var(--oscuro);
+    margin: 0 4rem;
+    text-align: center;
+}
+
+.descripcion a {
+    color: var(--primario);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .descripcion {
+        margin: 0 8rem;
+    }
+    
+}
+
+.social {    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.social__icon {
+    font-size: 24px; /* Ajusta el tamaño del icono */
+    color: var(--primario); /* Ajusta el color del icono */
+    margin: 0 10px; /* Ajusta el margen alrededor de los iconos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición de la transformación y la sombra */
+}
+
+.social__icon:hover {
+    transform: scale(1.5); /* Aumenta ligeramente el tamaño del icono */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+    margin: 4rem 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        margin: 4rem 8rem;
+    }
+    
+}
+
+.grid__card {
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición de la transformación y la sombra */
+}
+
+.grid__card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Intensifica la sombra para dar un efecto más profundo */
+}
+
+.grid__titulo {
+    font-size: 2.4rem;
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 700;
+}
+
+.grid__descripcion {
+    font-size: 1.6rem;
+    color: var(--oscuro);
+    margin-top: 0rem;
+    margin: .5rem 2rem 2rem 2rem;
+    font-weight: 300;
+}
+
+.grid__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid__card-link {
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+
+
+
+/* Como marco de foto */
+
+/* .Proyectos {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    padding: 2rem;
+    text-align: center;
+} */
+
+/* Personalizar cada tarjeta */
+
+.Proyectos {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Contacto {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Youtube {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Instagram {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Miss {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+
+footer {
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+
+
+
